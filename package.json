@@ -1,0 +1,17 @@
+{
+  "name": "audio-transcription",
+  "version": "1.0.0",
+  "description": "Micro audio transcription tool for FireFlies AI.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ai_armageddon <jer.boulerice@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0"
+  }
+}
