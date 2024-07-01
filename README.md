@@ -81,3 +81,20 @@ For feature requests, questions, or feedback, please reach out to me via email a
 ––
 
 If you'd like to have videos converted to audio, files hosted and/or the process handled, feel free to reach out to me at the email above.
+
+## Potential Future Features
+- [ ] Add support for uploading audio files from a local directory.
+- [ ] Add support for uploading audio files from a Google Drive folder.
+- [ ] Add support for uploading audio files from a Dropbox folder.
+- [ ] Add support for uploading audio files from an AWS S3 bucket.
+- [ ] Add support for uploading audio files from a Microsoft OneDrive folder.
+
+- [ ] Add support for converting videos to audio files before uploading.
+- [ ] Add support for YouTube video URLs to be converted to audio files before uploading.
+- [ ] Add support for Vimeo video URLs to be converted to audio files before uploading.
+
+- [ ] Add support for Twitter/X.com video URLs to be converted to audio files before uploading.
+- [ ] Add support for Instagram video URLs to be converted to audio files before uploading.
+- [ ] Add support for TikTok video URLs to be converted to audio files before uploading.
+
+Email me if interested in a particular feature or submit a pull request for contributions.
