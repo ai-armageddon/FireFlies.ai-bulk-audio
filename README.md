@@ -6,9 +6,9 @@ The script reads a list of audio files with their titles and URLs, and uploads e
 
 ## Prerequisites
 
+– Unix based system (Linux, macOS, etc.)
 - Node.js installed on your machine.
 - A FireFlies.ai account with an API key.
-- A `.env` file with your FireFlies.ai API key.
 
 ## Installation
 
@@ -25,7 +25,7 @@ The script reads a list of audio files with their titles and URLs, and uploads e
    npm install
    ```
 
-3. Create a `.env` file in the root of the project with your FireFlies.ai API key:
+3. Edit the `.env` file and add your FireFlies.ai API key:
 
    ```
    FIREFLIES_API_KEY=your_api_key_here
