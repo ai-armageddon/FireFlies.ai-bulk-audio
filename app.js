@@ -1,14 +1,17 @@
 const axios = require("axios");
 require("dotenv").config();
 
-const apiKey = process.env.FIREFLIES_API_KEY;
-const subscription = process.env.FIREFLIES_SUBSCRIPTION; // Assuming you have a way to identify the user's subscription tier
+const apiKey = process.env.FIREFLIES_API_KEY; // add your Fireflies API in .env file
+const subscription = process.env.FIREFLIES_SUBSCRIPTION; // add your Fireflies subscription tier in .env file
 
+
+// check if Fireflies API key is present
 if (!apiKey) {
   console.error("API Key is missing. Please check your .env file.");
   process.exit(1);
 }
 
+// array of audio files to upload
 const allAudio = [
   // format
   // { title: "audio title", url: "audio url" },
@@ -25,6 +28,7 @@ const headers = {
   Authorization: `Bearer ${apiKey}`,
 };
 
+// function to upload audio
 async function uploadAudio(title, audio_url) {
   // Encoding the URL to handle spaces
   const encodedAudioUrl = encodeURI(audio_url);
@@ -61,6 +65,7 @@ async function uploadAudio(title, audio_url) {
   }
 }
 
+// function to handle rate limit delay based on subscription tier
 async function uploadAudioWithDelay() {
   let delay;
 
@@ -84,4 +89,4 @@ async function uploadAudioWithDelay() {
   }
 }
 
-uploadAudioWithDelay();
+uploadAudioWithDelay(); // start uploading audio files with delay to Fireflies.ai platform
