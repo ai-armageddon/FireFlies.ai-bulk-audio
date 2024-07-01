@@ -39,20 +39,22 @@ See the [FireFlies.ai Docs](https://docs.fireflies.ai/getting-started/quickstart
 2. Run the script:
 
    ```bash
-   node uploadAudio.js
+   node ./uploadAudio.js
    ```
 
 ## Configuration
 
-- **Delay Between Uploads**: The script includes a delay between uploads to avoid rate limiting. You can adjust the delay by modifying the `uploadAudioWithDelay` function call:
+Subscription Handling
 
-   ```javascript
-   uploadAudioWithDelay(1250); // 1.25 seconds delay
-   ```
-
-The delay in the script is for FireFlies.ai premium users rate limit.
+- **Delay Between Uploads**: The script includes a delay between uploads to avoid rate limiting based on your FireFlies.ai subscription tier.
 
 ![FireFlies.AI rate limits table.](./rate-limit.png)
+
+Ensure you have the necessary environment variables set up in your .env file for your subscription tier.
+
+```bash
+FIREFLIES_SUBSCRIPTION=your_subscription_tier # options: 'Free', 'Pro', 'Business', 'Enterprise'
+```
 
 ## Example
 
@@ -72,16 +74,10 @@ const allAudio = [
 - Ensure that the audio URLs are correctly formatted and accessible.
 - Handle any potential errors during the upload process by checking the console logs.
 
----
+## Support
 
-Feel free to adjust the content as needed for your specific use case.
-
-–––
-
-For feature requests, questions, or feedback, please reach out to me via email at jer.boulerice@gmail.com
+For feature requests, questions, or feedback, please reach out to me via email at [jer.boulerice@gmail.com](mailto:jer.boulerice@gmail.com).
 
 ––
 
 If you'd like to have videos converted to audio, files hosted and/or the process handled, feel free to reach out to me at the email above.
-
-```
