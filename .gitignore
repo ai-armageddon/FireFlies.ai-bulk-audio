@@ -1,3 +1,11 @@
 /node_modules
 
+/audio-files/*
+!/audio-files/.gitkeep
+
 to-do.txt
+
+test-key.txt
+old.js
+
+.env

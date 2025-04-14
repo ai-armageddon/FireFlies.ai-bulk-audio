@@ -39,7 +39,7 @@ See the [FireFlies.ai Docs](https://docs.fireflies.ai/getting-started/quickstart
 2. Run the script:
 
    ```bash
-   node ./uploadAudio.js
+   node ./app.js
    ```
 
 ## Configuration
@@ -82,8 +82,12 @@ For feature requests, questions, or feedback, please reach out to me via email a
 
 If you'd like to have videos converted to audio, files hosted and/or the process handled, feel free to reach out to me at the email above.
 
+
+## Recently added features
+- [x] Handle max upload file sizes.
+- [x] Add support for uploading audio files from a local directory.
+
 ## Potential Future Features feel free to submit pull requests for these features
-- [ ] Add support for uploading audio files from a local directory.
 - [ ] Add support for uploading audio files from a Google Drive folder.
 - [ ] Add support for uploading audio files from a Dropbox folder.
 - [ ] Add support for uploading audio files from an AWS S3 bucket.
@@ -91,8 +95,6 @@ If you'd like to have videos converted to audio, files hosted and/or the process
 
 –
 
-- [ ] Handle max upload file sizes.
-- [ ] Handle max upload file durations.
 
 –
 
